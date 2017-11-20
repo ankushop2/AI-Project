@@ -1,71 +1,54 @@
 <!DOCTYPE html>
-<html>
-
+<html >
 <head>
   <meta charset="UTF-8">
-  <title>Tic Tac Toe</title>
+  <title>Tic Tac Toe Minimax</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
 
+      <link rel="stylesheet" href="css/style.css">
 
-
-  <link rel="stylesheet" href="css/style.css">
-
-
+  
 </head>
 
 <body>
-  <center><h1>TIC TAC TOE</h1></center>
-  <div class="container">
-    <div class="select">
-      <p>You're playing against computer. Choose X or O</p>
-      <form action="#">
-        <input class="checkBox" type="checkbox" name="xPlayer" value="X">X Player
-      </form>
-      <form action="#">
-        <input class="checkBox" type="checkbox" name="oPlayer" value="O">O Player
-      </form>
-    </div>
-    <div class="tictactoe">
-      <!-- selection for X or O -->
-      <!-- first row (3 square) -->
-      <div class="row">
-        <div id="0" class="square right bottom"></div>
-        <!--
-      -->
-        <div id="1" class="square right bottom"></div>
-        <!--
-      -->
-        <div id="2" class="square bottom"></div>
-      </div>
+  <head>
+	<link href='https://fonts.googleapis.com/css?family=Arimo|Montserrat' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1>Tic-Tac-Toe</h1>
+	<div id='selection'>
+		Play as:
+		<button class='hover'>X</button>
+		<button class='hover'>O</button>
+	</div>
+	<div id='result'>
+	</div>
+	<table>
+		<tr id='row0' class='row'>
+			<td id='00' class='spot'> </td>
+			<td id='01' class='spot'> </td>
+			<td id='02' class='spot'> </td>
+		</tr>
+		<tr id='row1' class='row'>
+			<td id='10' class='spot'> </td>
+			<td id='11' class='spot'> </td>
+			<td id='12' class='spot'> </td>
+		</tr>
+		<tr id='row2' class='row'>
+			<td id='20' class='spot'> </td>
+			<td id='21' class='spot'> </td>
+			<td id='22' class='spot'> </td>
+		</tr>
+	</table>
 
-      <!-- second row (3 square) -->
-      <div class="row">
-        <div id="3" class="square right bottom"></div>
-        <!--
-      -->
-        <div id="4" class="square right bottom"></div>
-        <!--
-      -->
-        <div id="5" class="square bottom"></div>
-      </div>
+<br><br>
+	<center><h3> AI Project by Ankush Arunkumar, Ankita Tiwari, Chandini, Karthik Vas, Ajay HS.</h3></center>
+</body>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-      <!-- third row (3 square) -->
-      <div class="row">
-        <div id="6" class="square right"></div>
-        <!--
-      -->
-        <div id="7" class="square right"></div>
-        <!--
-      -->
-        <div id="8" class="square"></div>
-      </div>
-    </div>
-  </div>
-
-<center><h3> AI Project by Ankush Arunkumar, Ankita Tiwari, Chandini, Karthik Vas, Ajay HS.</h3></center>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
-  <script src="js/index.js"></script>
+    <script  src="js/index.js"></script>
 
 </body>
-
 </html>
